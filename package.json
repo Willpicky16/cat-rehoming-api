@@ -1,0 +1,27 @@
+{
+  "name": "week07sprint02_cat_rehoming_api_feb2017",
+  "version": "1.0.0",
+  "description": "### Background",
+  "main": "data_seed.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js",
+    "seed": "node seed.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Willpicky16/week07sprint02_cat_rehoming_api_feb2017.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Willpicky16/week07sprint02_cat_rehoming_api_feb2017/issues"
+  },
+  "homepage": "https://github.com/Willpicky16/week07sprint02_cat_rehoming_api_feb2017#readme",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "mongoose": "^4.9.2"
+  }
+}
