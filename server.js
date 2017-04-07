@@ -7,7 +7,8 @@ const apiRouter = require('./routes/api');
 const bodyParser = require('body-parser');
 const jsonParse = bodyParser.json();
 
-mongoose.connect('mongodb://localhost/cats_api');
+// mongoose.connect('mongodb://localhost/cats_api');
+mongoose.connect('mongodb://admin:admin@ds037005.mlab.com:37005/cat-rehoming');
 
 app.use(jsonParse);
 
@@ -21,7 +22,7 @@ app.get('/', function (req, res) {
   res.status(200).send({status: 'OK'});
 })
 
-app.listen(3000, function (err) {
+app.listen(process.env.PORT || 3000, function (err) {
   if (err) {
     return console.log(err);
   }
